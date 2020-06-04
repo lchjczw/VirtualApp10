@@ -1,0 +1,166 @@
+一、android.content
+主要是 PackageParser,该类型覆盖了系统的隐藏类 android.content.pm.PackageParser
+
+二、com.lody.virtual
+这里就是框架的主体代码了
+
+    1.1    com.lody.virtual.client
+    运行在客户端的代码，指加载到 VA 中的子程序在被 VA 代理(hook)之后,所运行的代码
+
+        1.1.1  com.lody.virtual.client.hook
+        hook java 层函数的一些代码
+
+        1.1.2  com.lody.virtual.client.ipc
+        伪造的一些 framework 层的 IPC 服务类，诸如 ActivityManager,ServiceManager 等等，使用 VXXXXX 命名。hook 之后，子程序就会运行到这里而·不是原来真正的系统 framework 代码。
+
+        1.1.3 com.lody.virtual.client.stub
+        系统四大组件的插桩，如提前注册在 Menifest 里的几十个 StubActivity。
+
+    1.2    com.lody.virtual.remote
+    一些可序列化 Model，继承于 Parcelable
+
+    1.3    com.lody.virtual.server
+    server 端代码，VA 伪造了一套 framework 层系统 service 的代码，他在一个独立的服务中记录管理组件的各种 Recorder，其逻辑其实与系统原生的相近，通过 Binder 与 client 端的 ipc 包中的 VXXXXManager 通讯。诸如 AMS(VAMS),PMS(VPMS)。
+
+
+三、 mirror
+系统 framework 的镜像，实现了与 framework 层相对应的结构，封装了反射获取系统隐藏字段和方法的，便于直接调用获取或者赋值以及调用方法。
+     Base 一些基础措施的封装
+     1 Mirror framework 层镜像
+
+
+
+
+
+
+
+
+
+android.content
+主要是 PackageParser,该类型覆盖了系统的隐藏类 android.content.pm.PackageParser
+
+com.lody.virtual
+这里就是框架的主体代码了
+
+com.lody.virtual.client
+运行在客户端的代码，指加载到 VA 中的子程序在被 VA 代理(hook)之后,所运行的代码
+
+com.lody.virtual.client.hook
+hook java 层函数的一些代码
+
+ipc
+伪造的一些 framework 层的 IPC 服务类，诸如 ActivityManager,ServiceManager 等等，使用 VXXXXX 命名。hook 之后，子程序就会运行到这里而·不是原来真正的系统 framework 代码。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

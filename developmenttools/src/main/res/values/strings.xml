@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DevelopmentTools</string>
+    <string name="network_error_connect">无法连接服务器，请检查你的网络设置</string>
+</resources>
