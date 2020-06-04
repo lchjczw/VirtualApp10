@@ -1,10 +1,9 @@
 #VirtualApp 10.0适配
 
 
-如需提前查看源码先去https://github.com/asLody/VirtualApp
+纯属个人学习所用,如有侵权,请联系 VX:zhinongsu 立马删除
 
-由于个人刚做好兼容 android 10 、与自身项目 有点关联、等移除自身关联后共享 aar 、 jar 、code 等 供大家相互探讨
-VX:zhinongsu
+由于个人刚做好兼容 android 10 、部分App还存在bug 
 
 2020.6.4
    1、修改原始系统不能反射导致的诸多问题
