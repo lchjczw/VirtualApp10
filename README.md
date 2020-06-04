@@ -1,4 +1,5 @@
-# VirtualApp10
+VirtualApp 10.0适配
+
 
 如需提前查看源码先去https://github.com/asLody/VirtualApp
 
