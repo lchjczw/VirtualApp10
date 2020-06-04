@@ -1,7 +1,7 @@
  #    VirtualApp 10.0适配
 
-软件原版https://github.com/asLody/VirtualApp
-本项目纯属个人学习修改如有侵权,请联系本人 VX:zhinongsu 删除
+软件原版https://github.com/asLody/VirtualApp<br>
+本项目纯属个人学习修改,有疑问请联系本人 VX:zhinongsu
 
 由于个人刚做好兼容 android 10 、部分App还存在bug 
 
